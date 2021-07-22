@@ -5,8 +5,6 @@ console.log('got here');
 $(document).ready(onReady);
 
 function onReady() {
-  console.log('so ready');
-
   $('#addBtn').on('click', addToList);
   $('#clearList').on('click', clearList);
 }
@@ -14,7 +12,7 @@ function onReady() {
 function addToList() {
   console.log('button got clicked!');
   let inputVal = $('#about-yourself').val();
-  $('ul').append(`<li>${inputVal}</li>`);
+  $('ul').append(`<li> ${inputVal} </li>`);
 }
 
 function clearList() {
