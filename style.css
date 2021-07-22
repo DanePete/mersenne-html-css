@@ -1,3 +1,8 @@
 body {
   background: lightcoral;
 }
+
+#my-cool-table {
+  font-size: 24px;
+  margin: 0 auto;
+}

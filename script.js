@@ -38,7 +38,10 @@ function onReady() {
   let input = em.parent().siblings('input');
   console.log('input', input);
 
-  let tdParent = $('.td1').closest('table');
+
+  // MY FUNKY CODE 
+
+  let tdParent = $('#my-cool-table tbody tr td:nth-child(2)').closest('table');
   let parentTableId = tdParent.attr('id').toString();
   let parentTableIdHash = '#' + parentTableId;
   $(parentTableIdHash).hide().show(4000);
