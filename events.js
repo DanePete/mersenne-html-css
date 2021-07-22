@@ -13,7 +13,8 @@ function onReady() {
 
 function addToList() {
   console.log('button got clicked!');
-  $('ul').append('<li>hello</li>');
+  let inputVal = $('#about-yourself').val();
+  $('ul').append(`<li>${inputVal}</li>`);
 }
 
 function clearList() {
