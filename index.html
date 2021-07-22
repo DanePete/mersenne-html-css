@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML / CSS Review</title>
-
   <link rel="stylesheet" href="./style.css">
+  <script src="jquery.js"></script>
 
+  <!-- Include jQuery code -->
+  <!-- Make sure this is after jquery.js -->
+  <script src="script.js"></script>
 </head>
 <body>
   <h1>Hello Mersenne!</h1>
@@ -21,7 +24,34 @@
   </div>
 
   <!-- a self-closing tag -->
-  <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5d35eacaf1176b0008974b54%2F960x0.jpg%3FcropX1%3D790%26cropX2%3D5350%26cropY1%3D784%26cropY2%3D3349" alt="">
+  <img id='yoloImg' src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5d35eacaf1176b0008974b54%2F960x0.jpg%3FcropX1%3D790%26cropX2%3D5350%26cropY1%3D784%26cropY2%3D3349" alt="">
+  <img class='fancyImg' src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5d35eacaf1176b0008974b54%2F960x0.jpg%3FcropX1%3D790%26cropX2%3D5350%26cropY1%3D784%26cropY2%3D3349" alt="">
+
+  
+  <input 
+    type="text"
+    placeholder="Tell me about youreself"
+    id="about yourself"
+  />
+
+  <!-- Some elements have specific structures -->
+  <ul>
+    <!-- Children of ul has to be an li -->
+    <li>Item A <button>Click me!</button></li>
+  </ul>
+
+  <table>
+    <thead>
+      <th>col 1</th>
+      <th>col 2</th>
+      <th>col 3</th>
+    </thead>
+    <tbody>
+      <tr>col a</tr>
+      <tr>col b</tr>
+      <tr>col c</tr>
+    </tbody>
+  </table> 
 
 </body>
 </html>
