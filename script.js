@@ -1,49 +1,49 @@
-console.log('got here');
+// console.log('got here');
 
-// THE INCANTATION
-// Wait for the DOM to load
+// // THE INCANTATION
+// // Wait for the DOM to load
 
-$(document).ready(onReady); // onReady is a "callback"
+// $(document).ready(onReady); // onReady is a "callback"
 
-// Function to call when the DOM is loaded
-function onReady() {
-  console.log('So ready');
+// // Function to call when the DOM is loaded
+// function onReady() {
+//   console.log('So ready');
 
-  let h1 = $('h1');
-  console.log('h1', h1);
+//   let h1 = $('h1');
+//   console.log('h1', h1);
 
-  h1.text('jQuery FTW');
-  h1.css('transform', 'rotate(180)');
-  h1.css('color', 'green');
+//   h1.text('jQuery FTW');
+//   h1.css('transform', 'rotate(180)');
+//   h1.css('color', 'green');
 
-  let yoloImg = $('#yoloImg');
-  console.log(yoloImg);
+//   let yoloImg = $('#yoloImg');
+//   console.log(yoloImg);
 
-  let fancyImages = $('.fancyImg');
-  console.log('fancyImgs', fancyImages);
-  fancyImages.hide().fadeIn(4000);
+//   let fancyImages = $('.fancyImg');
+//   console.log('fancyImgs', fancyImages);
+//   fancyImages.hide().fadeIn(4000);
 
-  // Complex selectors
-  // just like css
-  let lotsOfThings = $('li > button, th');
-  lotsOfThings.css('background', 'lightblue');
+//   // Complex selectors
+//   // just like css
+//   let lotsOfThings = $('li > button, th');
+//   lotsOfThings.css('background', 'lightblue');
 
-  let yoloDiv = $('#yoloDiv');
-  yoloDiv.hide().slideDown(2000);
+//   let yoloDiv = $('#yoloDiv');
+//   yoloDiv.hide().slideDown(2000);
 
-  let em = yoloDiv.find('em');
-  em.text('You only linguini once');
+//   let em = yoloDiv.find('em');
+//   em.text('You only linguini once');
 
-  // Traverse the DOM
-  let input = em.parent().siblings('input');
-  console.log('input', input);
+//   // Traverse the DOM
+//   let input = em.parent().siblings('input');
+//   console.log('input', input);
 
 
-  // MY FUNKY CODE 
+//   // MY FUNKY CODE 
 
-  let tdParent = $('#my-cool-table tbody tr td:nth-child(2)').closest('table');
-  let parentTableId = tdParent.attr('id').toString();
-  let parentTableIdHash = '#' + parentTableId;
-  $(parentTableIdHash).hide().show(4000);
+//   let tdParent = $('#my-cool-table tbody tr td:nth-child(2)').closest('table');
+//   let parentTableId = tdParent.attr('id').toString();
+//   let parentTableIdHash = '#' + parentTableId;
+//   $(parentTableIdHash).hide().show(4000);
 
-}
+// }
